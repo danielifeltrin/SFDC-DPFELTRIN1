@@ -1,0 +1,119 @@
+<apex:page sidebar="false">
+  
+  <script src="{!URLFOR( $Resource.datatables, "jquery.js" )}"></script>
+  <script src="{!URLFOR( $Resource.datatables, "jquery.dataTables.js" )}"></script>
+  <script src="{!URLFOR( $Resource.datatables, "dataTables.fixedColumns.js" )}"></script>
+  
+  <apex:stylesheet value="{!URLFOR($Resource.datatablescss, 'jquery.dataTables.css')}"/> 
+  <apex:stylesheet value="{!URLFOR($Resource.datatablescss, 'dataTables.fixedColumns.css')}"/> 
+  
+  <!-- <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.7/css/jquery.dataTables.css"></link> -->
+
+  <script>
+  $(document).ready(function() {
+    var table = $('#testeDani').DataTable( {
+        scrollX:        true,
+        scrollCollapse: true,
+        paging:         false,
+        searching:      false
+    } );
+    new $.fn.dataTable.FixedColumns( table, {
+        leftColumns: 2
+    } );
+} );
+  </script>
+  
+  <apex:outputPanel style="width:1300px;" layout="block">
+  <table id="testeDani" class="stripe row-border order-column" cellspacing="0" >
+          <thead>
+            <tr>
+              <th>Header 1</th>
+              <th>Header 2</th>
+              <th>Header 3</th>
+              <th>Header 4</th>
+              <th>Header 5</th>
+              <th>Header 6</th>
+              <th>Header 7</th>
+              <th>Header 8</th>
+              <th>Header 1</th>
+              <th>Header 2</th>
+              <th>Header 3</th>
+              <th>Header 4</th>
+              <th>Header 5</th>
+              <th>Header 6</th>
+              <th>Header 7</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Linha 1</td>
+              <td>Linha 1</td>
+              <td>Linha 1</td>
+              <td>Linha 1</td>
+              <td>Linha 1</td>
+              <td>Linha 1</td>
+              <td>Linha 1</td>
+              <td>Linha 1</td>
+              <td>Linha 1</td>
+              <td>Linha 1</td>
+              <td>Linha 1</td>
+              <td>Linha 1</td>
+              <td>Linha 1</td>
+              <td>Linha 1</td>
+              <td>Linha 1</td>
+            </tr>
+            <tr>
+              <td>Linha 2</td>
+              <td>Linha 2</td>
+              <td>Linha 2</td>
+              <td>Linha 2</td>
+              <td>Linha 2</td>
+              <td>Linha 2</td>
+              <td>Linha 2</td>
+              <td>Linha 2</td>
+              <td>Linha 2</td>
+              <td>Linha 2</td>
+              <td>Linha 2</td>
+              <td>Linha 2</td>
+              <td>Linha 2</td>
+              <td>Linha 2</td>
+              <td>Linha 2</td>
+            </tr>
+            <tr>
+              <td>Linha 2</td>
+              <td>Linha 2</td>
+              <td>Linha 2</td>
+              <td>Linha 2</td>
+              <td>Linha 2</td>
+              <td>Linha 2</td>
+              <td>Linha 2</td>
+              <td>Linha 2</td>
+              <td>Linha 2</td>
+              <td>Linha 2</td>
+              <td>Linha 2</td>
+              <td>Linha 2</td>
+              <td>Linha 2</td>
+              <td>Linha 2</td>
+              <td>Linha 2</td>
+            </tr>
+            <tr>
+              <td>Linha 2</td>
+              <td>Linha 2</td>
+              <td>Linha 2</td>
+              <td>Linha 2</td>
+              <td>Linha 2</td>
+              <td>Linha 2</td>
+              <td>Linha 2</td>
+              <td>Linha 2</td>
+              <td>Linha 2</td>
+              <td>Linha 2</td>
+              <td>Linha 2</td>
+              <td>Linha 2</td>
+              <td>Linha 2</td>
+              <td>Linha 2</td>
+              <td>Dani</td>
+            </tr>
+          </tbody>
+        </table>
+     </apex:outputPanel>
+</apex:page>

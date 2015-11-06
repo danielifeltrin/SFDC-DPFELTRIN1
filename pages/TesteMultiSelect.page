@@ -1,0 +1,13 @@
+<apex:page controller="TesteMultiSelectController">
+  <script>    
+    function getSelectedOptions(sel) {
+     alert(sel);
+    }
+  </script>
+  
+<apex:form >
+        <apex:selectList value="{!countries}" multiselect="true" onselect="getSelectedOptions(this)">
+            <apex:selectOptions value="{!items}"/>
+        </apex:selectList><p/>
+</apex:form>
+</apex:page>

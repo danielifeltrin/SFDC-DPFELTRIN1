@@ -1,0 +1,35 @@
+<apex:page >
+ <apex:stylesheet value="{!URLFOR($Resource.jquery, 'jquery.multiselect.css')}"/>
+ <apex:stylesheet value="{!URLFOR($Resource.jquery, 'jquery.multiselect.filter.css')}"/>
+ <apex:stylesheet value="{!URLFOR($Resource.jquery, 'style.css')}"/>
+ <apex:stylesheet value="{!URLFOR($Resource.jquery, 'prettify.css')}"/>
+ <apex:stylesheet value="{!URLFOR($Resource.jquery, 'jquery-ui.css')}"/>
+  
+  <script src="{!URLFOR( $Resource.jquery, "jquery.js" )}"></script>
+  <script src="{!URLFOR( $Resource.jquery, "jquery-ui.min.js" )}"></script>
+  <script src="{!URLFOR( $Resource.jquery, "jquery.multiselect.js" )}"></script>
+  <script src="{!URLFOR( $Resource.jquery, "prettify.js" )}"></script>
+  
+
+ 
+ <script type="text/javascript">
+$(function(){
+
+    $("select").multiselect({
+        selectedList: 4
+    });
+    
+});
+</script>
+<apex:form >
+<apex:selectList multiselect="true" style="width:100px; height:50px;">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+        <option value="option4">Option 4</option>
+        <option value="option5">Option 5</option>
+        <option value="option6">Option 6</option>
+        <option value="option7">Option 7</option>
+        </apex:selectList> 
+</apex:form>
+</apex:page>

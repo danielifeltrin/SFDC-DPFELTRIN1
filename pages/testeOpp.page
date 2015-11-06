@@ -1,0 +1,7 @@
+<apex:page sidebar="false" >
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1>Congratulations</h1>
+  This is your new Page: testeOpp
+  <!-- End Default Content REMOVE THIS -->
+  <apex:iframe src="/p/opp/SelectSearch?addTo=006e0000008LwrB" scrolling="true" height="500px" width="500px"/>
+</apex:page>

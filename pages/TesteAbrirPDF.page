@@ -1,0 +1,8 @@
+<apex:page sidebar="false" >
+  <!-- Begin Default Content REMOVE THIS -->
+  <apex:form >
+  <apex:commandButton value="salvar"/>
+    <apex:commandButton value="cancelar"/>
+  </apex:form>
+<apex:iframe src="/apex/TestePDF" width="1200px"></apex:iframe>
+</apex:page>

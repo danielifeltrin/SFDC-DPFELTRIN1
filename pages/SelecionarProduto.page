@@ -1,0 +1,25 @@
+<apex:page standardController="Opportunity">
+  <apex:form >
+  <apex:pageblock title="Produto Selecionado" mode="edit">
+     <input type="checkbox" value="{true}" rendered="{false}"/>
+    <apex:panelGrid columns="6" style="width:100%; text-align:center; font-weight:bold">
+      <apex:outputText > Produto </apex:outputText>
+      <apex:outputText > Quantidade </apex:outputText>
+      <apex:outputText > Valor de Venda </apex:outputText>
+      <apex:outputText > Número de Série </apex:outputText>
+      <apex:outputText > Valor Mínimo </apex:outputText>
+      <apex:outputText > Valor Máximo </apex:outputText>
+      <apex:outputText > Produto </apex:outputText>
+      <apex:inputtext />
+      <apex:inputtext />
+      <apex:inputtext />
+      <apex:inputtext />
+      <apex:inputtext />
+    </apex:panelGrid>
+  </apex:pageblock>
+  <apex:pageblock title="Itens Obrigatórios" mode="edit">
+  </apex:pageblock>
+  <apex:pageblock title="Itens Opcionais" mode="edit">
+  </apex:pageblock>
+  </apex:form>
+</apex:page>

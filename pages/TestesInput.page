@@ -1,0 +1,50 @@
+<apex:page doctype="html-5.0" standardController="TesteInput__c" extensions="InputTypeTestController" >
+  <apex:form >
+    <apex:pageBlock >
+    	<apex:pageBlockSection title="Utilizando apex:inputField" columns="1" collapsible="false">
+            <apex:inputField value="{!TesteInput__c.Teste_Auto__c}"/>
+            <apex:inputField value="{!TesteInput__c.Teste_Data_Hora__c}"/>
+            <apex:inputField value="{!TesteInput__c.Teste_Email__c}"/>
+            <apex:inputField value="{!TesteInput__c.Teste_Month__c}"/>
+            <apex:inputField value="{!TesteInput__c.Teste_URL__c}"/>
+            <apex:inputField value="{!TesteInput__c.Teste_tel__c}"/>
+        </apex:pageBlockSection>
+        <apex:pageBlockSection title="Utilizando apex:input type=..." columns="2" collapsible="false">
+        	auto
+            <apex:input type="auto" value="{!testeAuto}"
+             html-min="5" html-max="100" html-step="5" />
+            date
+            <apex:input type="date" value="{!testeData}"/>
+            datetime
+            <apex:input type="datetime" value="{!testeDateTimeLocal}"/>
+            datetime-local
+            <apex:input type="datetime-local" value="{!testeDateTimeLocal}"/>
+            month
+            <apex:input type="month" value="{!testeMonth}"
+            html-autofocus="true"/>
+            week
+            <apex:input type="week" value="{!testeWeek}"/>
+            time
+            <apex:input type="time" value="{!testeTime}"/> 
+            email
+            <apex:input type="email" value="{!testeEmail}"
+            html-placeholder="you@cloud2b.com.br"
+            html-pattern="^[a-zA-Z0-9._-]+@cloud2b.com.br"/>
+            number
+            <apex:input type="number" value="{!testeNumber}"/>
+            range
+            <apex:input type="range" value="{!testeRange}"/>
+            search
+            <apex:input type="search" value="{!testeSearch}"/>
+            tel
+            <apex:input type="tel" value="{!testeTel}"
+            html-placeholder="(99)9999-9999"/>
+            text
+            <apex:input type="text" value="{!testeText}"/>
+            url      
+            <input value="{!testeUrl}" type="url"/>
+            <apex:commandButton value="Salvar" action="{!salvar}"/>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+  </apex:form>
+</apex:page>

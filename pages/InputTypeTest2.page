@@ -1,0 +1,81 @@
+<apex:page doctype="html-5.0" standardController="TesteInput__c" extensions="InputTypeTestController" >
+  <apex:form >
+      Auto 
+      <apex:inputText value="{!TesteInput__c.Teste_Auto__c}"
+             html-min="5" html-max="100" html-step="5" />
+      <br/>  
+      Data 
+      <apex:inputText value="{!TesteInput__c.Teste_Data_Hora__c}"/>
+      <br/>
+      Datetime
+      <apex:input type="datetime-local" value="{!testeDateTimeLocal}"/>
+      <br/>
+      Month
+      <apex:input type="month" value="{!testeMonth}"
+            html-autofocus="true"/>
+      <br/>
+      Week
+      <apex:input type="week" value="{!testeWeek}"/>
+      <br/>
+      Time
+      <apex:input type="time" value="{!testeTime}"/> 
+      <br/>
+      Email
+      <apex:input type="email" value="{!testeEmail}"
+            html-placeholder="you@cloud2b.com.br"
+            html-pattern="^[a-zA-Z0-9._-]+@cloud2b.com.br"/>
+      <br/>
+      Number
+      <apex:input type="number" value="{!testeNumber}"/>
+      <br/>
+      Range
+      <apex:input type="range" value="{!testeRange}"/>
+      <br/>
+      Search
+      <apex:input type="search" value="{!testeSearch}"/>
+      <br/>
+      Tel
+      <apex:input type="tel" value="{!testeTel}"
+            html-placeholder="(99)9999-9999"/>
+      <br/>
+      Text
+      <apex:input type="text" value="{!testeText}"/>
+      <br/>
+      <!-- <apex:input type="url" value="{!testeUrl}"/> -->
+      <br/>
+      
+      <apex:commandButton value="Salvar" action="{!salvar}"/>
+      <!-- 
+	<apex:inputField value="{!Account.Phone}" type="tel" 
+	 		html-placeholder="999-999-9999"
+            html-autofocus="false" />
+	 <apex:inputField value="{!Account.Email__c }" type="email" 
+            html-placeholder="you@example.com"
+            html-pattern="^[a-zA-Z0-9._-]+@example.com$"
+            html-title="Please enter an example.com email address"
+            />
+      
+        <apex:inputField value="{! Account.Data_de_Retorno__c }" type="date" 
+            showDatePicker="false"
+            />
+     
+        <apex:inputField value="40" type="auto"
+            html-min="0" html-max="100" html-step="5"
+            html-title="Must be between 0 and 100" 
+            />
+
+        <apex:inputField value="{! Contact.Favorite_Color__c }" type="text"
+            list="{! colorsList }" 
+            />
+-->
+               <!--
+        <apex:inputField value="cube" 
+            list="circle,square,rectangle,triangle,hexagon,cube,sphere" 
+            />
+ 
+        <apex:selectRadio value="{! Contact.LeadSource}" layout="pageDirection"
+            legendText="Select a source for this contact"  borderVisible="true">
+            <apex:selectOptions value="{! sourcesList }"/>
+        </apex:selectRadio> -->
+  </apex:form>
+</apex:page>

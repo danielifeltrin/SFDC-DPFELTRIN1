@@ -1,0 +1,10 @@
+<apex:page >
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1>Congratulations</h1>
+  This is your new Page: TesteData
+  <!-- End Default Content REMOVE THIS -->
+  <br/>
+  <apex:outputText value="{0,date,dd MMMMM yyyy}" lang="pt">
+    <apex:param value="{!today()}"/>
+  </apex:outputText>
+</apex:page>

@@ -1,0 +1,9 @@
+<apex:page standardController="Opportunity" renderAs="pdf">
+    <apex:form >
+        <apex:pageBlock title="Test Drive">
+            <apex:pageBlockSection title="Termo de Responsabilidade" columns="1">
+                <apex:outputText value="{!Opportunity.name}"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

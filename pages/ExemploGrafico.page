@@ -1,0 +1,3 @@
+<apex:page >
+ <analytics:reportChart reportId="00Oo00000011En7" cacheResults="false"/> 
+</apex:page>
